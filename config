@@ -27,8 +27,7 @@ bindsym $mod+q kill
 
 #::: start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run -i -fn 'monaco-9:bold:pixelsize=12' -nb '#3F3F3F' -nf '#15B3E8' -sf '#000000' -sb '#F2FA00'
-#filemanager
-#bindsym $mod+n exec "pcmanfm"
+
 
 #:::: change focus
 bindsym $mod+j focus left
@@ -88,11 +87,14 @@ bindsym $mod+space focus mode_toggle
 #quick_back_and_forth_work_space
 workspace_auto_back_and_forth yes
 bindsym $mod+z workspace back_and_forth
-#brightness control
-bindsym XF86MonBrightnessUp exec --no-startup-id sudo bright_Up
+
+#=============brightness control==============
+#============mod+f5 need brightup script=========
+bindsym XF86MonBrightnessUp exec --no-startup-id sudo bright_Up 
+#============mod+f5 need bright_Down script=========
 bindsym XF86MonBrightnessDown exec --no-startup-id sudo bright_Down
 
-
+#=============turn off the display mod+ f7 =======
 bindsym XF86Display exec --no-startup-id xset dpms force off
 # focus the parent container
 bindsym $mod+a focus parent
@@ -100,7 +102,7 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
-######grouping workspaces+name####
+#=====grouping workspaces+name====#
 set $ws1 "1: "
 set $ws2 "2: "
 set $ws3 "3: "
