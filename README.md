@@ -1,7 +1,7 @@
 # dotfiles
 
 #i3-gaps  
-#arch linux 
-#nvim 
-#feh  
-#Urxvt  
+#arch_linux   
+#nvim   
+#feh    
+#Urxvt    
