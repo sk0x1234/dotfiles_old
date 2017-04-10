@@ -1,4 +1,4 @@
-# add lines in visdo
+# add lines in visudo
 
 
 user hostname =NOPASSWD: /usr/bin/bright_Up
