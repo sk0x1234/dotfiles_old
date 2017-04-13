@@ -208,8 +208,8 @@ new_float  normal
 #pixel 1
 
 #:::::i3_ gaps::::::::::::::
-set $default_gaps_inner 20
-set $default_gaps_outer 7
+set $default_gaps_inner 10
+set $default_gaps_outer 5
 gaps inner $default_gaps_inner
 gaps outer $default_gaps_outer
 smart_gaps on
@@ -227,19 +227,22 @@ bar{
 	status_command  i3status 
 	position top
 	font pango:monaco bold  8
-	separator_symbol "●"
+	separator_symbol "   ●"
 	mode dock
 
 	colors{
-		 separator      #dc322f      
+		 separator      #DBFF0F      
 		 background	#3F3F3F	     
-		 statusline    #00FA85
+		 statusline   #9DC0FC
+		 #69A0FF
+		 #1BFF0F
+		 #00FA85
 
 							 #BORDER	 #BG		 #TEXT			
 				 
         active_workspace	  #777F8B	 #777F8B	 #ecedee
         inactive_workspace	 #3f3f3f	 #3f3f3f	 #ecedee
-        focused_workspace	 #3f3f3f	 #3f3f3f	 #00FA85
+        focused_workspace	 #3f3f3f	 #3f3f3f	 #9DC0FC
         urgent_workspace	 #DEDFE3	 #DEDFE3	 #767E8A       
 	}
 
