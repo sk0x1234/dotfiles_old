@@ -46,56 +46,78 @@ URxvt.keysym.Shift-Down: command:\033]721;1\007
 ! Base16 Google Dark
 ! Scheme: Seth Wright (http://sethawright.com)
 
-#define base00 #1d1f21
-#define base01 #282a2e
-#define base02 #373b41
-#define base03 #969896
-#define base04 #b4b7b4
-#define base05 #c5c8c6
+!#define base00 #1d1f21
+!#define base01 #282a2e
+!#define base02 #373b41
+!#define base03 #969896
+!#define base04 #b4b7b4
+!#define base05 #c5c8c6
+!#define base06 #e0e0e0
+!#define base07 #ffffff
+!#define base08 #CC342B
+!#define base09 #F96A38
+!#define base0A #FBA922
+!#define base0B #198844
+!#define base0C #3971ED
+!#define base0D #3971ED
+!#define base0E #A36AC7
+!#define base0F #3971ED
+!
+! Base16 Isotope
+! Scheme: Jan T. Sott
+
+#define base00 #000000
+#define base01 #404040
+#define base02 #606060
+#define base03 #808080
+#define base04 #c0c0c0
+#define base05 #d0d0d0
 #define base06 #e0e0e0
 #define base07 #ffffff
-#define base08 #CC342B
-#define base09 #F96A38
-#define base0A #FBA922
-#define base0B #198844
-#define base0C #3971ED
-#define base0D #3971ED
-#define base0E #A36AC7
-#define base0F #3971ED
+#define base08 #ff0000
+#define base09 #ff9900
+#define base0A #ff0099
+#define base0B #33ff00
+#define base0C #00ffff
+#define base0D #0066ff
+#define base0E #cc00ff
+#define base0F #3300ff!
 
+! special
+*.foreground:   #ffffff
+*.background:   #1a1919
+*.cursorColor:  #ffffff
 
+! black
+*.color0:       #000000
+*.color8:       #4d4d4d
 
-*.foreground:   base05
-*.background:   base00
-*.cursorColor:  base05
+! red
+*.color1:       #cc2c2b
+*.color9:       #e21613
 
-*.color0:       base00
-*.color1:       base08
-*.color2:       base0B
-*.color3:       base0A
-*.color4:       base0D
-*.color5:       base0E
-*.color6:       base0C
-*.color7:       base05
+! green
+*.color2:       #5bcb4b
+*.color10:      #00fd56
 
-*.color8:       base03
-*.color9:       base08
-*.color10:      base0B
-*.color11:      base0A
-*.color12:      base0D
-*.color13:      base0E
-*.color14:      base0C
-*.color15:      base07
+! yellow
+*.color3:       #f8f400
+*.color11:      #fffe5a
 
-! Note: colors beyond 15 might not be loaded (e.g., xterm, urxvt),
-! use 'shell' template to set these if necessary
-*.color16:      base09
-*.color17:      base0F
-*.color18:      base01
-*.color19:      base02
-*.color20:      base04
-*.color21:      base06
+! blue
+*.color4:       #243bd1
+*.color12:      #556fff
 
+! magenta
+*.color5:       #b31ab8
+*.color13:      #fd28ff
 
+! cyan
+*.color6:       #23cdcd
+*.color14:      #14ffff
+
+! white
+*.color7:       #e4e4e4
+*.color15:      #d3d3d3
 
 cursor.theme: Capitaine Cursors
