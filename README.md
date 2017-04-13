@@ -5,3 +5,5 @@
 #nvim   
 #feh    
 #Urxvt    
+#fish                 
+#mpv            
