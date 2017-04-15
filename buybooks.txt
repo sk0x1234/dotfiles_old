@@ -1,0 +1,11 @@
+http://www.amazon.com/Hacker-Disassembling-Uncovered-Techniques-Programming/dp/1931769222/ref=sr_1_1?ie=UTF8&qid=1340228704&sr=8-1&keywords=disassembling
+http://www.amazon.com/x86-Disassembly-Exploring-relationship-Assembly/dp/1466346051/ref=sr_1_1?ie=UTF8&qid=1340228719&sr=8-1&keywords=disassembly
+http://www.amazon.com/Introduction-Intel-Assembly-Language-Programming/dp/1466470038/ref=pd_bxgy_b_text_b
+http://www.amazon.com/Reversing-Secrets-Engineering-Eldad-Eilam/dp/0764574817/ref=pd_bxgy_b_text_c
+http://www.amazon.com/Valgrind-3-3-Debugging-Profiling-applications/dp/0954612051/ref=pd_sim_b_12
+http://www.amazon.com/An-Introduction-GCC-For-Compilers/dp/0954161793/ref=pd_bxgy_b_text_c
+http://www.amazon.com/Emotions-Revealed-Second-Edition-Communication/dp/0805083391/ref=pd_sim_b_40
+http://www.amazon.com/Introducing-NLP-Psychological-Understanding-Neuro-Linguistic/dp/1573244988/ref=pd_sim_b_10
+http://www.amazon.com/Hacker-Debugging-Uncovered-Kris-Kaspersky/dp/1931769400/ref=pd_sim_b_7
+http://www.amazon.com/gp/product/1593272073/ref=s9_simh_gw_p14_d0_g14_i5?pf_rd_m=ATVPDKIKX0DER&pf_rd_s=center-5&pf_rd_r=06FT9RHSRHSNTVBW7YG4&pf_rd_t=101&pf_rd_p=470939291&pf_rd_i=507846
+http://www.amazon.com/Introduction-Intel-Assembly-Language-Programming/dp/1466470038/ref=sr_1_1?ie=UTF8&qid=1340283823&sr=8-1
