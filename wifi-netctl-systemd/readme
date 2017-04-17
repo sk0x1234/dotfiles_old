@@ -1,1 +1,15 @@
 congigurations..
+
+
+
+bring wifi interface down..
+#  sudo ip link set <INT> down
+
+connect to a wifi and generate conf...
+
+#sudo wifi-menu -o 
+
+systemctl enable <netctl-auto> 
+
+systemctl enable netctl.service
+
