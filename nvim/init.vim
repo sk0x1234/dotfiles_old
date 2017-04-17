@@ -69,3 +69,6 @@ nnoremap Q <nop>
  set statusline+=%b,0x%-8B\                   " current char
  set statusline+=%-14.(%l,%c%V%)\ %<%P        " offset
 
+ " saving readonly file edited in nvim
+ "
+ cmap w!! w !sudo tee > /dev/null %
