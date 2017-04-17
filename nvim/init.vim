@@ -71,4 +71,4 @@ nnoremap Q <nop>
 
  " saving readonly file edited in nvim
  "
- cmap w!! w !sudo tee > /dev/null %
+ cmap w!! w !sudo tee %
