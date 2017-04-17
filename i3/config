@@ -231,9 +231,10 @@ bar{
 	mode dock
 
 	colors{
-		 separator      #DBFF0F      
-		 background	#3F3F3F	     
-		 statusline   #9DC0FC
+		 separator   #ffff00  #<<both are yellow >> #DBFF0F      
+		 background	#3F3F3F	  #<< grey >>   
+		 statusline   #00bfff  #<< deepBlue>>
+		 #9DC0FC -- light blue
 		 #69A0FF
 		 #1BFF0F
 		 #00FA85
@@ -242,7 +243,7 @@ bar{
 				 
         active_workspace	  #777F8B	 #777F8B	 #ecedee
         inactive_workspace	 #3f3f3f	 #3f3f3f	 #ecedee
-        focused_workspace	 #3f3f3f	 #3f3f3f	 #9DC0FC
+        focused_workspace	 #3f3f3f	 #3f3f3f	#00bfff      ##9DC0FC
         urgent_workspace	 #DEDFE3	 #DEDFE3	 #767E8A       
 	}
 
