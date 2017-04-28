@@ -1,3 +1,3 @@
 function scp
-	cd /mnt/driveE/Dump_linux/programming/1_C_tutorials
+	cd /mnt/driveE/Dump_linux/programming/C_tutorials
 end
