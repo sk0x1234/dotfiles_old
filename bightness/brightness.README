@@ -1,4 +1,6 @@
 # add lines in visudo
+#cd in to /usr/bin/
+# chmod u+x bright*
 
 
 user hostname =NOPASSWD: /usr/bin/bright_Up
