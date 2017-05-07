@@ -1,15 +1,14 @@
-congigurations..
+#configurations..
 
-
-
-bring wifi interface down..
+#bring wifi interface down..
 #  sudo ip link set <INT> down
 
-connect to a wifi and generate conf...
+#connect to a wifi and generate conf...
 
-#sudo wifi-menu -o 
+sudo wifi-menu -o 
 
-systemctl enable <netctl-auto> 
+#systemctl enable <netctl-auto> 
+#systemctl enable netctl.service
+#netctl-auto@.service                     
 
-systemctl enable netctl.service
-
+sudo netctl-auto enable wlp2s0-1001101101101110011
