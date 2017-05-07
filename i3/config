@@ -1,6 +1,6 @@
 #--[i3 config file]-- #
 #-----------backgroung img----(+)----wifi-starting---------
-exec_always --no-startup-id  feh -g 1366x768  --recursive --randomize --bg-fill  /home/windy/Pictures/
+exec_always --no-startup-id  feh -g 1366x768  --recursive --randomize --bg-fill  /home/windy/Pictures/wallpapers/
 #exec_always --no-startup-id  compton
 #::::mod touch:::::::
 set $mod Mod4
@@ -117,8 +117,9 @@ assign [class="(?i)google-chrome-unstable"] → $ws2
 assign [class="(?i)mpv"] → $ws3
 assign [class="(?i)mupdf"] → $ws4
 assign [class="(?i)wireshark-gtk"] → $ws8
+assign [class="(?i)Tor Browser"] → $ws9
 #assign [class="(?!urxvt)"] → $ws1
-#assign [class="(?!urxvt)"] → $ws1
+assign [class="^Tor Browser$" instance="^Navigator$"] → 3
 
 # switch to workspace
 bindsym $mod+1 workspace  $ws1
