@@ -19,7 +19,7 @@ sudo mkdir /usr/share/icons/capitaine_cursors
 sudo mv ./fonts/* /usr/share/fonts
 fc-cahe -rvf
 #==================================
-mv -t ~/ Xresourses/.xinitrc Xresourses/.Xresourses
+mv -t ~/ ./Xresourses/.xinitrc ./Xresourses/.Xresourses
 #==================================
 sudo mv ./automount/fstab /etc/
 sudo chmod 600 /etc/fstab
@@ -41,5 +41,5 @@ sudo mv ./modprob.d/blacklist.conf /etc/modprob.d/
 #================================================
 sudo mv ./touchpad/synaptics/70-synaptics.conf /etc/X11/xorg.conf.d
 sudo unzip ./touchpad/synaptics/capitaine_cursors_by_krourke-dabmjtm.zip -d /usr/share/icons/capitaine_cursors
-
+#=================================================================
 
