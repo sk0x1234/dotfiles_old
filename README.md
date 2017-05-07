@@ -14,7 +14,7 @@
 mkdir /mnt/driveE
 mkdir /mnt/driveD
 mkdir /mnt/driveC
-
+sudo mkdir /usr/share/icons/capitaine_cursors
 #===================================
 sudo mv ./fonts/* /usr/share/fonts
 fc-cahe -rvf
@@ -39,3 +39,7 @@ mv ./wallpapers/ ~/Pictures/
 #===================================
 sudo mv ./modprob.d/blacklist.conf /etc/modprob.d/
 #================================================
+sudo mv ./touchpad/synaptics/70-synaptics.conf /etc/X11/xorg.conf.d
+sudo unzip ./touchpad/synaptics/capitaine_cursors_by_krourke-dabmjtm.zip -d /usr/share/icons/capitaine_cursors
+
+
