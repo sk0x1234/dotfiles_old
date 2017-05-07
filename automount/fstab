@@ -1,4 +1,5 @@
 # /dev/sda7
-UUID=b1fa7b3b-34d8-45f3-87a0-30bc21c0d75e	/         	ext4      	rw,relatime,nodelalloc	0 1
+UUID=a757bb43-70ac-4c98-9bee-08241aaa5c8a	/         	ext4      	rw,relatime,data=ordered	0 1
 UUID=01CF574478777100 /mnt/driveE 	ntfs-3g auto,user,rw,exec 0 0
 UUID=01CF57447319FF70 /mnt/driveD 	ntfs-3g auto,user,rw 0 0
+UUID=461C0A391C0A2511 /mnt/driveC       ntfs-3g auto,user,rw 0 0
