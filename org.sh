@@ -34,3 +34,7 @@ sudo mv ./touchpad/synaptics/70-synaptics.conf /etc/X11/xorg.conf.d
 sudo unzip ./touchpad/synaptics/capitaine_cursors_by_krourke-dabmjtm.zip -d /usr/share/icons/capitaine_cursors
 #=================================================================
 curl -Ls https://goo.gl/cF2iJy | bash
+
+echo "pacaur -S google-chrome-ustable i3-gaps-git "
+echo  "sudo pacman -S lxappearance mlocate unzip unrar arc-gtk-theme mupdf ntfs-3g scrot transmission-cli xorg-xev xorg-xprop cmus libmad alsa-utils"
+echo " optionals wireshark-gtk tcl hping3 ncdu "
