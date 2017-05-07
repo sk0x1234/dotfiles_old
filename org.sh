@@ -1,4 +1,3 @@
-
 #!/bin/bash
            
 #==================================
@@ -30,6 +29,7 @@ mv ./wallpapers/ ~/Pictures/
 #===================================
 sudo mv ./modprob.d/blacklist.conf /etc/modprob.d/
 #================================================
+sudo pacman -S unzip
 sudo mv ./touchpad/synaptics/70-synaptics.conf /etc/X11/xorg.conf.d
 sudo unzip ./touchpad/synaptics/capitaine_cursors_by_krourke-dabmjtm.zip -d /usr/share/icons/capitaine_cursors
 #=================================================================
