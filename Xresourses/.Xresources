@@ -85,7 +85,8 @@ URxvt.keysym.Shift-Down: command:\033]721;1\007
 
 ! special
 *.foreground:   #ffffff
-*.background:   #1d1f21
+*.background:   #202020
+!#1d1f21
 *.cursorColor:  #ffffff
 
 ! black
