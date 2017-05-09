@@ -4,6 +4,11 @@
 mkdir /mnt/driveE
 mkdir /mnt/driveD
 mkdir /mnt/driveC
+echo "enter a number"
+read x
+sudo mount `/dev/sda$x` /mnt/driveE
+ln -s /mnt/driveE/songs ~/songs
+ln -s /mnt/driveE/videos/ ~/videos
 sudo mkdir /usr/share/icons/capitaine_cursors
 #===================================
 sudo mv ./fonts/* /usr/share/fonts
