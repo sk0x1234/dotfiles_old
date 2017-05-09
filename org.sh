@@ -15,24 +15,24 @@ sudo mv ./automount/fstab /etc/
 sudo chmod 400 /etc/fstab
 sudo chown root:root /etc/fstab
 #==================================
-chmod u+x ./bightness/bright*
+chmod u+x ./bightness/bright*.sh
 mv ./bightness/bright*.sh /usr/bin/
 mv ./brightness/bright*.conf /etc/sudoes.d/
 #===================================
 mv ./i3/config ~/.config/i3/
 sudo mv ./i3/i3status.conf /etc/
 #===================================
-mv ./mpv ~/.config
-mv ./nvim ~/.config
-mv .ranger ~/.config
+mv ./mpv ~/.config/
+mv ./nvim ~/.config/
+mv .ranger ~/.config/
 mv ./fish\ shell/* ~/.config/fish/
 mv ./wallpapers/ ~/Pictures/
 #===================================
 sudo mv ./modprob.d/blacklist.conf /etc/modprob.d/
 #================================================
 sudo pacman -S unzip
-sudo mv ./touchpad/synaptics/70-synaptics.conf /etc/X11/xorg.conf.d
-sudo unzip ./touchpad/synaptics/capitaine_cursors_by_krourke-dabmjtm.zip -d /usr/share/icons/capitaine_cursors
+sudo mv ./touchpad/synaptics/70-synaptics.conf /etc/X11/xorg.conf.d/
+sudo unzip ./touchpad/synaptics/capitaine_cursors_by_krourke-dabmjtm.zip -d /usr/share/icons/capitaine_cursors/
 #=================================================================
 curl -Ls https://goo.gl/cF2iJy | bash
 
