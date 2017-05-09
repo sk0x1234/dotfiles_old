@@ -16,7 +16,8 @@ sudo chmod 400 /etc/fstab
 sudo chown root:root /etc/fstab
 #==================================
 chmod u+x ./bightness/bright*
-mv ./bightness/bright* /usr/bin/
+mv ./bightness/bright*.sh /usr/bin/
+mv ./brightness/bright*.conf /etc/sudoes.d/
 #===================================
 mv ./i3/config ~/.config/i3/
 sudo mv ./i3/i3status.conf /etc/
