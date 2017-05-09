@@ -12,7 +12,7 @@ fc-cahe -rvf
 mv -t ~/ ./Xresourses/.xinitrc ./Xresourses/.Xresourses
 #==================================
 sudo mv ./automount/fstab /etc/
-sudo chmod 600 /etc/fstab
+sudo chmod 400 /etc/fstab
 sudo chown root:root /etc/fstab
 #==================================
 chmod u+x ./bightness/bright*
