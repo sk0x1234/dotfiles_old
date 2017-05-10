@@ -18,8 +18,8 @@ font pango:monaco 9
 floating_modifier $mod
 
 #:::start a terminal
-bindsym $mod+Return exec urxvt  # terminator
-
+bindsym $mod+Return exec urxvt  # Urxvt
+bindsym $mod+x exec xterm -e /bin/bash  # xterm
 
 # :::kill focused window
 bindsym $mod+q kill
@@ -43,17 +43,22 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+h move left
-bindsym $mod+Shift+j move down
-bindsym $mod+Shift+k move up
-bindsym $mod+Shift+l move right
+#bindsym $mod+Shift+h move left
+#bindsym $mod+Shift+j move down
+#bindsym $mod+Shift+k move up
+#bindsym $mod+Shift+l move right
+
+
+bindsym $mod+Shift+Left workspace prev
+bindsym $mod+Shift+Right workspace next
+
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
-
+#bindsym $mod+Shift+Left move left 50px
+#bindsym $mod+Shift+Down move down 50px
+#bindsym $mod+Shift+Up move up 50px
+#bindsym $mod+Shift+Right move right 50px
+#
 # split in horizontal orientation
 bindsym $mod+h split h
 
@@ -78,7 +83,7 @@ bindsym $mod+Shift+space floating toggle
 # enable floating mode for all Specified windows
 for_window [class="(?i)urxvt"] floating enable
 for_window [class="(?i)mpv"] floating enable
-
+for_window [class="(?i)xterm"] floating enable
 
 
 
@@ -101,16 +106,16 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 ######grouping workspaces+name####
-set $ws1 "1: "
-set $ws2 "2: "
-set $ws3 "3: "
-set $ws4  "4: "
-set $ws5  "5: "
+set $ws1 "1:"
+set $ws2 "2:"
+set $ws3 "3:"
+set $ws4  "4:"
+set $ws5  "5:"
 set $ws6  "6:"
-set $ws7  "7:"
+set $ws7  "7:"
 set $ws8  "8:"
 set $ws9   "9:"
-set $ws10  "10:"
+set $ws10  "10:"
 
 #assign [class="(?i)urxvt"] → $ws1
 assign [class="(?i)google-chrome-unstable"] → $ws2
@@ -131,7 +136,7 @@ bindsym $mod+6 workspace  $ws6
 bindsym $mod+7 workspace  $ws7
 bindsym $mod+8 workspace  $ws8
 bindsym $mod+9 workspace  $ws9
-bindsym $mod+0 workspace  $ws9
+bindsym $mod+0 workspace  $ws10
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $ws1
