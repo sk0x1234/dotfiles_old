@@ -1,14 +1,9 @@
 #--[i3 config file]-- #
 #-----------backgroung img----(+)----wifi-starting---------
 exec_always --no-startup-id  feh -g 1366x768  --recursive --randomize --bg-fill  /home/windy/Pictures/wallpapers/
-#exec_always --no-startup-id  compton
+
 #::::mod touch:::::::
 set $mod Mod4
-
-
-#::::default Programs::::::::
-set $browser google-chrome-unstable
-set $terminal urxvt
 
 # font
 font pango:monaco 9
@@ -30,35 +25,15 @@ bindsym $mod+d exec dmenu_run -i -fn 'monaco-9:bold:pixelsize=12' -nb '#3F3F3F' 
 #filemanager
 #bindsym $mod+n exec "pcmanfm"
 
-#:::: change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
-
 # :::alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
-
-# move focused window
-#bindsym $mod+Shift+h move left
-#bindsym $mod+Shift+j move down
-#bindsym $mod+Shift+k move up
-#bindsym $mod+Shift+l move right
-
-
+#===========workspace prev-next===========
 bindsym $mod+Shift+Left workspace prev
 bindsym $mod+Shift+Right workspace next
 
-
-# alternatively, you can use the cursor keys:
-#bindsym $mod+Shift+Left move left 50px
-#bindsym $mod+Shift+Down move down 50px
-#bindsym $mod+Shift+Up move up 50px
-#bindsym $mod+Shift+Right move right 50px
-#
 # split in horizontal orientation
 bindsym $mod+h split h
 
@@ -90,20 +65,16 @@ for_window [class="(?i)xterm"] floating enable
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
 
-#quick_back_and_forth_work_space
+#===========quick_back_and_forth_work_space
 workspace_auto_back_and_forth yes
 bindsym $mod+z workspace back_and_forth
-#brightness control
+#==============brightness control===========
 bindsym XF86MonBrightnessUp exec --no-startup-id sudo bright_Up
 bindsym XF86MonBrightnessDown exec --no-startup-id sudo bright_Down
-
-
 bindsym XF86Display exec --no-startup-id xset dpms force off
-# focus the parent container
-bindsym $mod+a focus parent
 
-# focus the child container
-#bindsym $mod+d focus child
+#=========== focus the parent container=========
+bindsym $mod+a focus parent
 
 ######grouping workspaces+name####
 set $ws1 "1:"
@@ -117,6 +88,8 @@ set $ws8  "8:"
 set $ws9   "9:"
 set $ws10  "10:"
 
+
+#===========assinging to a work space============
 #assign [class="(?i)urxvt"] → $ws1
 assign [class="(?i)google-chrome-unstable"] → $ws2
 assign [class="(?i)mpv"] → $ws3
@@ -157,7 +130,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec "i3-nagbar -f "pango:monaco 8 " -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
