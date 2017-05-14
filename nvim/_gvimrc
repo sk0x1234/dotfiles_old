@@ -5,7 +5,6 @@ set nowritebackup
 filetype plugin indent on
 syn on se title
 set rnu 
-set shell=/bin/bash
 colorscheme  molokai "badwolf 
  win 100 92 " The window height
 
@@ -17,13 +16,10 @@ colorscheme  molokai "badwolf
  set sw=4
  set expandtab
  set nowrap
-    set ruler " Show ruler
-    set go-=T  " Following line removes the toolbar, As I usually dont need it.  Gives me extra lines for editor. If you have big monitor and you think you need toolbar, comment this line.
-    set go-=m  " Make command line two lines high
-    set go-=r
-nnoremap <C-F1> :if &go=~#'m'<Bar>set go-=m<Bar>else<Bar>set go+=m<Bar>endif<CR>
-nnoremap <C-F2> :if &go=~#'T'<Bar>set go-=T<Bar>else<Bar>set go+=T<Bar>endif<CR>
-nnoremap <C-F3> :if &go=~#'r'<Bar>set go-=r<Bar>else<Bar>set go+=r<Bar>endif<CR>
+ set ruler " Show ruler
+ nnoremap <C-F1> :if &go=~#'m'<Bar>set go-=m<Bar>else<Bar>set go+=m<Bar>endif<CR>
+ nnoremap <C-F2> :if &go=~#'T'<Bar>set go-=T<Bar>else<Bar>set go+=T<Bar>endif<CR>
+ nnoremap <C-F3> :if &go=~#'r'<Bar>set go-=r<Bar>else<Bar>set go+=r<Bar>endif<CR>
  
 
 " open tab, close tab, next tab, previous tab (just like Chrome and Firefox keyboard shortcuts)
@@ -42,3 +38,9 @@ nnoremap <C-F3> :if &go=~#'r'<Bar>set go-=r<Bar>else<Bar>set go+=r<Bar>endif<CR>
         set hidden " This option allows you to switch between multiple buffers without saving a changed buffer
         set hlsearch " Switch on search pattern highlighting.
         set mousehide " Hide the mouse pointer while typing.
+
+
+set guioptions-=m  "remove menu bar
+set guioptions-=T  "remove toolbar
+set guioptions-=r  "remove right-hand scroll bar
+set guioptions-=L  "remove left-hand scroll bar
