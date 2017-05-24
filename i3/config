@@ -21,15 +21,15 @@ bindsym $mod+q kill
 
 
 #::: start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run -i -fn 'monaco-9:bold:pixelsize=12' -nb '#3F3F3F' -nf '#15B3E8' -sf '#000000' -sb '#F2FA00'
-#filemanager
-#bindsym $mod+n exec "pcmanfm"
+bindsym $mod+d exec dmenu_run -i -fn 'Monaco-9:Bold:pixelsize=12' -nb '#3F3F3F' -nf '#15B3E8' -sf '#000000' -sb '#F2FA00'
+
 
 # :::alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
+
 #===========workspace prev-next===========
 bindsym $mod+Shift+Left workspace prev
 bindsym $mod+Shift+Right workspace next
