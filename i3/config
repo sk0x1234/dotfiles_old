@@ -6,7 +6,7 @@ exec_always --no-startup-id  feh -g 1366x768  --recursive --randomize --bg-fill 
 set $mod Mod4
 
 # font
-font pango:monaco 9
+font pango:Monaco 9
 
 
 #::Use Mouse+$mod to drag floating windows to their wanted position
