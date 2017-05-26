@@ -1,5 +1,5 @@
-#--[i3 config file]-- #
-#-----------backgroung img----(+)----wifi-starting---------
+#--[Sway config file]-- #
+#-----------backgroung img----\
 output * bg ~/Pictures/wallpapers/* fill
 exec xrdb $HOME/.Xresources
 #::::mod touch:::::::
@@ -10,16 +10,7 @@ set $mod Mod4
 set $browser google-chrome-unstable
 set $term urxvt
 
-### Input configuration
-#
-# Example configuration:
-#
-#   input "2:8:AlpsPS/2_ALPS_GlidePoint" {
-#       dwt enabled
-#       tap enabled
-#       edge_scroll enabled
-#       middle_emulation enabled
-#   }
+
 
 # font
 font pango:Monaco, 9
@@ -108,7 +99,8 @@ bindsym XF86MonBrightnessUp exec --no-startup-id sudo bright_Up
 bindsym XF86MonBrightnessDown exec --no-startup-id sudo bright_Down
 
 
-bindsym XF86Display exec --no-startup-id xset dpms force off
+# bindsym XF86Display exec --no-startup-id xset dpms force off
+
 # focus the parent container
 bindsym $mod+a focus parent
 
@@ -259,13 +251,13 @@ bar {
         background #3f3f3f
 		separator #ffff00
 
-        focused_workspace	 #3f3f3f	 #3f3f3f	#00bfff      
-        inactive_workspace #3f3f3f #3f3f3f #ecedee
-		active_workspace   #777F8B   #777F8B   #ecedee
-        urgent_workspace	 #DEDFE3	 #DEDFE3	 #767E8A       
+        focused_workspace	#3f3f3f	#3f3f3f	#00bfff      
+        inactive_workspace	#3f3f3f	#3f3f3f	#ecedee
+	active_workspace	#777F8B	#777F8B	#ecedee
+        urgent_workspace	#DEDFE3	#DEDFE3	#767E8A       
     }
 #
-#							 #BORDER	 #BG		 #TEXT			
+#			        #BORDER	 #BG	#TEXT			
 
 }
 
