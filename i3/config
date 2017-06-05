@@ -59,6 +59,7 @@ bindsym $mod+Shift+space floating toggle
 for_window [class="(?i)urxvt"] floating enable
 for_window [class="(?i)mpv"] floating enable
 for_window [class="(?i)xterm"] floating enable
+for_window [class="(?i)feh"] floating enable
 
 
 
