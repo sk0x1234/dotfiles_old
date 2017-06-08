@@ -211,13 +211,10 @@ bar{
 	mode dock
 
 	colors{
-		 separator   #ffff00  #<<both are yellow >> #DBFF0F      
+		 separator   #ffff00  #<<both are yellow >>      
 		 background	#3F3F3F	  #<< grey >>   
-		 statusline   #00bfff  #<< deepBlue>>
-		 #9DC0FC -- light blue
-		 #69A0FF
-		 #1BFF0F
-		 #00FA85
+		 statusline    #00bfff      #<< deepBlue>>
+	
 
 				 #BORDER	 #BG		 #TEXT			
 				 
