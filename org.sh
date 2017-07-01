@@ -1,9 +1,13 @@
 #!/bin/bash
            
 #==================================
+echo 'mkdir /mnt/driveE'
 mkdir /mnt/driveE
+echo 'mkdir /mnt/driveD'
 mkdir /mnt/driveD
+echo 'mkdir /mnt/driveC'
 mkdir /mnt/driveC
+sleep 2
 echo "enter a number"
 read x
 sudo mount `/dev/sda$x` /mnt/driveE
