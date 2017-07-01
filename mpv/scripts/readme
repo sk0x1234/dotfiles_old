@@ -1,0 +1,5 @@
+>sudo pacman -S python-pip
+
+>sudo pip install subliminal
+
+# dependencies for subtitile lua script
