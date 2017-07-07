@@ -1,5 +1,5 @@
 function man --description 'Format and display manual pages'
-    set -lx MANPATH $__fish_datadir/man $MANPATH ""
+  #  set -lx MANPATH $__fish_datadir/man $MANPATH ""
 
     set -q man_blink; and set -l blink (set_color $man_blink); or set -l blink (set_color -o red)
     set -q man_bold; and set -l bold (set_color $man_bold); or set -l bold (set_color -o 5fafd7)
