@@ -2,13 +2,15 @@
 
 #bring wifi interface down..
 #  sudo ip link set <INT> down
+sudo systemctl disable dhcpcd.service
+
+install all netctl dependecies, 
+>>wpa_actiond (needed),
+>>dialog, 
+>>wpa_supplicant  etc ..   
 
 #connect to a wifi and generate conf...
-
 sudo wifi-menu -o 
+sudo netctl-auto enable netctl-auto@wlp2s0.service
 
-#systemctl enable <netctl-auto> 
-#systemctl enable netctl.service
-#netctl-auto@.service                     
-
-sudo netctl-auto enable wlp2s0-1001101101101110011
+disable all netctl(also @).services
