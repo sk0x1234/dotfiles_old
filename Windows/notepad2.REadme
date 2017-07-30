@@ -1,4 +1,0 @@
-Obtain a build of Notepad2 that supports this form of Notepad replacement.
-Create the following registry key: HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\notepad.exe.
-Inside the key, create a new string (REG_SZ) value, named "Debugger".
-Set the data of this new "Debugger" value to the full path to the Notepad2 executable, followed by the /z switch. For example, "C:\Windows\Notepad2.exe" /z
