@@ -6,7 +6,7 @@ set $mod Mod4
 
 
 #::::default Programs::::::::
-set $browser google-chrome-unstable
+set $browser chromium
 set $terminal urxvt
 
 
@@ -63,7 +63,7 @@ bindsym $mod+f fullscreen toggle
 popup_during_fullscreen smart
 
 #sticky
-#bindsym $mod+Shift+t sticky toggle
+bindsym $mod+Shift+s sticky toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
@@ -95,22 +95,22 @@ bindsym XF86MonBrightnessDown exec --no-startup-id sudo bright_Down
 bindsym XF86Display exec --no-startup-id xset dpms force off
 # focus the parent container
 bindsym $mod+a focus parent
-
-
 ######grouping workspaces+name####
+#set $ws1 "<span color='#78da59'>1:</span>"
 set $ws1 "1:"
-set $ws2 "2:"
-set $ws3 "3:"
-set $ws4  "4:"
-set $ws5  "5:"
-set $ws6  "6:"
-set $ws7  "7:"
-set $ws8  "8:"
-set $ws9   "9:"
-set $ws10  "10:"
+set $ws2 "<span color='#ffff33'>2:</span>"
+set $ws3 "<span color='#cc00ff'>3:</span>"    
+set $ws4  "<span color='#00A1F1'>4:</span>"
+set $ws5  "<span color='#F65314'>5:</span>"
+set $ws6  "<span color='#f7786b'>6:</span>"
+set $ws7  "<span color='#FBBC05'>7:</span>"
+set $ws8  "<span color='#00ffff'>8:</span>"
+set $ws9   "<span color='#33bdf5'>9:</span>"
+set $ws10  "<span color='#ff66ff'>10:</span>"
+
 
 #assign [class="(?i)urxvt"] → $ws1
-assign [class="(?i)google-chrome-unstable"] → $ws2
+assign [class="(?i)chromium"] → $ws2
 assign [class="(?i)mpv"] → $ws3
 assign [class="(?i)mupdf"] → $ws4
 assign [class="(?i)wireshark-gtk"] → $ws8
@@ -213,38 +213,21 @@ bindsym XF86AudioLowerVolume exec "amixer -q sset Master,0 2- unmute"
 bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle"
 
 
-
-bar{
-	status_command  i3status 
-	position top
-	font pango: Monaco bold 11px
-	separator_symbol "   ●"
+bar {
+	status_command  i3status
+    position top
+	font  Monaco,Bold 11px
+	separator_symbol "   "
 	mode dock
-
-	colors{
-	     separator   #ffff00  #<<both are yellow >> #dbff0f      
-		 background	#3f3f3f	  #<< grey >>   
-		 statusline    #00bfff   #00ace6
-
-							 #border	 #bg		 #text			
-				 
-        active_workspace	  #777f8b	 #777f8b	  #99ccff
-       inactive_workspace	 #3f3f3f	 #3f3f3f	 #999999  
-      focused_workspace	 #3f3f3f	 #3f3f3f	#00bfff   
-     urgent_workspace	 #dedfe3	 #dedfe3	 #767e8a       
-	}
-
+   
+    colors {
+        statusline   #78da59
+        background #585858
+		separator #fff32e
+							#border 	#bg		#txt
+        focused_workspace	#585858	#585858	#66FF66
+        inactive_workspace	#585858	#585858	 #78da59
+		active_workspace	#777F8B	#777F8B	#ecedee
+    	 urgent_workspace	#DEDFE3	#DEDFE3	#767E8A   
 }
-
-
-###########:::::::::::::::: marco de ventana ::::::::::::::::::#
-#################################################################
-# class           		 border  backgr  text   indicator child_border 
-client.focused		 	#607d8b #607d8b #dfdfdf  #dddddd   #607d8b
-client.focused_inactive 	#263238 #263238 #9a9b9c  #111111   #263238
-client.unfocused 		#455a64 #455a64 #a1a1a1  #bfbfbf   #455a64	
-client.urgent   		#4a4b4c #4a4b4c #fdfdfd  #fbfbfb   #4a4c4b
-client.placeholder     		#000000 #0c0c0c #ffffff  #000000   #0c0c0c
-client.background       	#111111
-
-
+}
