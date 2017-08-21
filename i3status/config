@@ -14,15 +14,6 @@ general {
 		markup="pango"
 }
 
-#pink   		  #ff80bf		#fa4c7e
-#yellow  		  #ffff66		#fdd243
-#green   		  #aaff80		#78da59
-#Dark blue 		  #1a8cff		#166cd6
-#light blue 	  #99ccff		#33bdf5
-#Grey Shadow      #b3b3b3		#8d8e90
-#Orange 		  #ffa64d 		#fba137
-
-
 
 order += "wireless _first_"
 order += "ethernet enp4s0"
@@ -31,7 +22,7 @@ order += "volume master"
 order += "tztime local"
 
 wireless _first_ {
-	#	format_up = " [%essid ]"       
+#		format_up = " [%essid ]"       
 	#	format_down = " [down]" p#73ABFF
 	 format_up = "<span color='#33bdf5'>[  ]: On: %essid </span> "   //(%quality at %essid) %ip"
 	 format_down = "" #"[  ]  Wifi: down"
