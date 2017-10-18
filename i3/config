@@ -34,8 +34,8 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
-bindsym $mod+Alt+Left workspace prev
-bindsym $mod+Alt+Right workspace next
+#bindsym $mod+Alt+Left workspace prev
+#bindsym $mod+Alt+Right workspace next
 
 # split in horizontal orientation
 bindsym $mod+h split h
@@ -135,7 +135,8 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -f 'pango:monaco 8' -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+#bindsym $mod+Shift+e exec "i3-nagbar -f 'pango:monaco 8' -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec "i3 exit"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -181,9 +182,10 @@ bindsym Mod4+c focus floating; mode "moveit"
 
 #:::::::::disable_window_borders::::::::
 for_window [class="^.*"] border pixel 0
-new_window pixel 1
-new_float  normal
+new_float  normal 0
 #pixel 1
+hide_edge_borders vertical
+
 
 #:::::i3_ gaps::::::::::::::
 set $default_gaps_inner 10
@@ -195,9 +197,14 @@ smart_borders on
 
 
 #:::::::::control de volume:::::::::::::
-bindsym XF86AudioRaiseVolume exec "amixer -q sset Master,0 2+ unmute"
-bindsym XF86AudioLowerVolume exec "amixer -q sset Master,0 2- unmute"
-bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle"
+#bindsym XF86AudioRaiseVolume exec "amixer -q sset Master,0 2+ unmute"
+#bindsym XF86AudioLowerVolume exec "amixer -q sset Master,0 2- unmute"
+#bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle"
+bindsym XF86AudioRaiseVolume exec "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 +5%"
+bindsym XF86AudioLowerVolume exec "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 -5%"
+bindsym XF86AudioMute exec "pactl set-sink-mute 0 toggle"
+#"pactl set-source-mute 1 toggle"
+
 #exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 bar {
@@ -218,3 +225,4 @@ bar {
    	 urgent_workspace	#DEDFE3	#DEDFE3	#767E8A   
 }
 }
+
